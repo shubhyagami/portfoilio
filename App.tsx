@@ -9,11 +9,12 @@ import RetroArcade from './apps/RetroArcade';
 import Notepad from './apps/Notepad';
 import Calculator from './apps/Calculator';
 import CalendarApp from './apps/CalendarApp';
+import Gallery from './apps/Gallery';
 import StartMenu from './components/StartMenu';
 import AnalogClock from './components/AnalogClock';
 import VideoPlayer from './components/VideoPlayer';
 import { WindowState } from './types';
-import { Terminal as TerminalIcon, User, FolderGit2, Power, Wifi, Volume2, Battery, Disc, Gamepad2, FileText, Calculator as CalcIcon, Calendar as CalIcon, Github } from 'lucide-react';
+import { Terminal as TerminalIcon, User, FolderGit2, Power, Wifi, Volume2, Battery, Disc, Gamepad2, FileText, Calculator as CalcIcon, Calendar as CalIcon, Github, Image as ImageIcon } from 'lucide-react';
 
 const App: React.FC = () => {
   const [isBooting, setIsBooting] = useState(true);
@@ -103,6 +104,7 @@ const App: React.FC = () => {
       case 'notepad': openWindow('notepad', 'Notepad', <Notepad />, <FileText size={16} />); break;
       case 'calculator': openWindow('calculator', 'Calculator', <Calculator />, <CalcIcon size={16} />); break;
       case 'calendar': openWindow('calendar', 'Calendar', <CalendarApp />, <CalIcon size={16} />); break;
+      case 'gallery': openWindow('gallery', 'Gallery', <Gallery />, <ImageIcon size={16} />); break;
     }
   };
 
@@ -172,6 +174,11 @@ const App: React.FC = () => {
           label="GitHub"
           icon={<Github size={40} />}
           onClick={() => window.open('https://github.com/shubhyagami', '_blank')}
+        />
+        <DesktopIcon
+          label="Gallery"
+          icon={<ImageIcon size={40} />}
+          onClick={() => launchApp('gallery')}
         />
       </div>
 
