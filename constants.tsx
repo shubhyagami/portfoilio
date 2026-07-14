@@ -101,6 +101,14 @@ export const PROJECTS: Project[] = [
     url: "https://study-nu-three.vercel.app/",
   },
   {
+    title: "WebMonitor",
+    type: "Web Application",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Monitoring"],
+    date: "2025",
+    description: "Free web monitoring tool to track uptime, health, and performance of websites and services.",
+    url: "https://web-monitor-free.vercel.app/",
+  },
+  {
     title: "Ethan: E-Waste Robot",
     type: "Robotics / AI",
     tech: ["Python", "Robotics", "Ultrasonic Sensors"],
