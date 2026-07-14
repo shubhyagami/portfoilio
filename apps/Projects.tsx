@@ -1,6 +1,6 @@
 import React from 'react';
 import { PROJECTS } from '../constants';
-import { Folder, GitBranch, Cpu, Server, Bot, Cloud, Terminal } from 'lucide-react';
+import { Folder, GitBranch, Cpu, Server, Bot, Cloud, Terminal, ExternalLink } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const getIcon = (title: string) => {
@@ -35,13 +35,26 @@ const Projects: React.FC = () => {
             </p>
 
             {/* Tech Stack Chips */}
-            <div className="flex flex-wrap gap-2 mt-auto">
+            <div className="flex flex-wrap gap-2">
               {project.tech.map(t => (
                 <span key={t} className="text-xs font-mono bg-gray-800 text-gray-300 px-2 py-1 rounded border border-gray-700 group-hover:border-green-900/50 group-hover:bg-green-900/10 group-hover:text-green-200 transition-colors">
                   {t}
                 </span>
               ))}
             </div>
+
+            {project.url && (
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="mt-4 inline-flex items-center gap-2 text-xs font-mono text-green-400 bg-green-900/20 border border-green-800/50 px-3 py-1.5 rounded hover:bg-green-900/40 hover:border-green-600 transition-all"
+              >
+                <ExternalLink size={12} />
+                Visit Live
+              </a>
+            )}
 
             {/* 3D decorative bottom line */}
             <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-green-500/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>

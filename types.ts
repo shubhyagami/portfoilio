@@ -25,6 +25,7 @@ export interface Project {
   description: string;
   date: string;
   type: string;
+  url?: string;
 }
 
 export interface Skill {
