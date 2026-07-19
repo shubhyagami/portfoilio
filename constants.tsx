@@ -128,6 +128,14 @@ export const PROJECTS: Project[] = [
     tech: ["Arduino", "Solenoid Valves", "Air Pressure"],
     date: "Feb 2023",
     description: "Precise lightweight control robotic arm using air pressure. Mimics human body movements suitable for industrial automation.",
+  },
+  {
+    title: "Shubhulator",
+    type: "x86 PC Emulator",
+    tech: ["v86", "x86 Assembly", "WebAssembly", "JavaScript"],
+    date: "2025",
+    description: "Browser-based x86 PC emulator that boots TinyCore OS directly in the browser. Features a full virtual machine with RAM, VGA, and real-time terminal interaction.",
+    url: "https://os-1yus.onrender.com/",
   }
 ];
 
