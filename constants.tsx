@@ -136,6 +136,14 @@ export const PROJECTS: Project[] = [
     date: "2025",
     description: "Browser-based x86 PC emulator that boots TinyCore OS directly in the browser. Features a full virtual machine with RAM, VGA, and real-time terminal interaction.",
     url: "https://os-1yus.onrender.com/",
+  },
+  {
+    title: "YTStream",
+    type: "YouTube Tool",
+    tech: ["Spring Boot", "React", "YouTube API", "MySQL"],
+    date: "2025",
+    description: "YouTube streaming tool for searching, streaming, and managing YouTube content with playlists and downloads.",
+    url: "https://ytstream-s4gp.onrender.com",
   }
 ];
 
