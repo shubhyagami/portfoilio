@@ -144,6 +144,14 @@ export const PROJECTS: Project[] = [
     date: "2025",
     description: "YouTube streaming tool for searching, streaming, and managing YouTube content with playlists and downloads.",
     url: "https://ytstream-s4gp.onrender.com",
+  },
+  {
+    title: "KoiCode",
+    type: "Coding Platform",
+    tech: ["Spring Boot", "React", "MySQL"],
+    date: "2025",
+    description: "Collaborative coding platform for writing, sharing, and running code snippets with real-time feedback and version tracking.",
+    url: "https://koi-code.onrender.com",
   }
 ];
 
