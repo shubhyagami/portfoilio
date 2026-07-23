@@ -152,6 +152,14 @@ export const PROJECTS: Project[] = [
     date: "2025",
     description: "Collaborative coding platform for writing, sharing, and running code snippets with real-time feedback and version tracking.",
     url: "https://koi-code.onrender.com",
+  },
+  {
+    title: "CodeID",
+    type: "Java IDE",
+    tech: ["Spring Boot", "Monaco Editor", "Java", "Thymeleaf"],
+    date: "2025",
+    description: "Browser-based Java IDE with IntelliJ-inspired interface. Features syntax highlighting, real-time compilation, project file management, and an integrated terminal.",
+    url: "https://codeid.onrender.com",
   }
 ];
 
